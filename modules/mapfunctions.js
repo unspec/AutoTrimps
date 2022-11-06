@@ -1879,6 +1879,8 @@ function Rhypo(should, level, reset) {
         hypoprefragmappy = undefined;
         hypofragmappybought = false;
     }
+
+    if (reset && gofarmbonfire) Rhyposhouldwood = false;
 }
 
 function RhypoMap() {
