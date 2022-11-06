@@ -286,8 +286,8 @@ function RfragMap() {
         document.getElementById("advPerfectCheckbox").checked = false;
         updateMapCost();
     }
+    var fragsOwned = game.resources.fragments.owned;
     for (var i = 8; i >= 0; i--) {
-        var fragsOwned = game.resources.fragments.owned;
         if (updateMapCost(true) > fragsOwned) {
           document.getElementById("difficultyAdvMapsRange").value = i;
         } else break;
