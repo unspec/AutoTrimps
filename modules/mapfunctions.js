@@ -1858,7 +1858,7 @@ function Rhypo(should, level, reset) {
     var hypofarmamount = getPageSetting('Rhypofarmstack');
     var hypoamountzones = hypofarmamount[hypoamountfarmindex];
 
-    var currentprice = (1e10 * Math.pow(100, game.challenges.Hypothermia.totalBonfires));
+    var currentprice = (1e10 * Math.pow(100, bonfire));
     var targetprice = (currentprice * Math.pow(100, ((hypoamountzones - bonfire) - 1))) * 1.05;
     targetprice += (targetprice / 1000)
     var gofarmbonfire = false;
@@ -1880,7 +1880,8 @@ function Rhypo(should, level, reset) {
         hypofragmappybought = false;
     }
 
-    if (reset && gofarmbonfire) Rhyposhouldwood = false;
+    if (reset && (gofarmbonfire || bonfire > hypoamountzones)) Rhyposhouldwood = false;
+
 }
 
 function RhypoMap() {
