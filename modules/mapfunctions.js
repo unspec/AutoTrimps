@@ -1870,7 +1870,7 @@ function Rhypo(should, level, reset) {
         Rshouldhypofarm = true;
         Rhyposhouldwood = false;
     }
-    if (should && hypofarmzone.includes(game.global.world)) {
+    if (should && (hypofarmzone.includes(game.global.world) || gofarmbonfire)) {
         Rhyposhouldwood = false;
     }
 
