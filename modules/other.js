@@ -3410,9 +3410,10 @@ function shipfragmap() {
 }
 
 function shipfragmin(number) {
+    var special = game.global.highestRadonLevelCleared > 83 ? "lsc" : "ssc";
     document.getElementById("biomeAdvMapsSelect").value = "Plentiful";
     document.getElementById("advExtraLevelSelect").value = number;
-    document.getElementById("advSpecialSelect").value = "lsc";
+    document.getElementById("advSpecialSelect").value = special;
     document.getElementById("lootAdvMapsRange").value = 9;
     document.getElementById("difficultyAdvMapsRange").value = 9;
     document.getElementById("sizeAdvMapsRange").value = 9;
