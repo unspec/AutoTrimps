@@ -2068,7 +2068,7 @@ function Rshould(any, one) {
         else if (Rdshouldtimefarm) should = "dtime";
         else if (Rshouldtributefarm) should = "tribute";
         else if (Rshouldequipfarm) should = "equip";
-        else if (Rshouldquest) should = "quest";
+        else if (Rshoulddoquest) should = "quest";
     }
     if (should != "no") return should;
 }
